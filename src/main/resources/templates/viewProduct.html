@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>RKFASHIONS</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link rel="stylesheet"  th:href="@{/css/style.css}"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<section id = "header">
+  <a href ="#"><img th:src="@{/images/logo.png} " width="100px"> </a>
+  <div>
+    <ul id ="navbar">
+      <li><a href="index.html" th:href="@{/index}">Home</a></li>
+      <li><a class="active" href="products.html" th:href="@{/products}">Products</a></li>
+      <li><a href="contact.html" th:href="@{/contact}">Contact</a></li>
+      <li><a th:href="@{/login}">Login</a></li>
+      <li><a href="cart.html"th:href="@{/cart}"><i class="fa fa-shopping-cart"></i></a></li>
+    </ul>
+  </div>
+</section>
+<div class="container" style="">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="col-sm-5 d-flex justify-content-center">
+        <img class="" height="150px" width="150px"
+             th:src="@{/productImages/{imageName}(imageName=${product.imageName})}">
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <div class="card" style="" th:each="product:${products}">
+        <div class="row no-gutters">
+          <div class="col-sm-5 d-flex justify-content-center">
+            <h5 class="card-title" th:text="${product.name}"></h5>
+            <h6 th:text="${product.category}"></h6>
+            <h4>$ <span th:text="${product.price}"></span></h4>
+            <p th:text="${product.description}"></p>
+            <a href="#" th:href="@{/shop/viewCart/{id}(id=${product.id})}"  class="btn btn-primary"> Add to cart</a>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>RKFASHIONS</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+<section id = "header">
+      <a href ="#"><img src= "" th:src="@{/images/logo.png} " width="100px"> </a>
+  <div>
+    <ul id ="navbar">
+      <li><a class="active" th:href="@{/admin}">Admin-Home</a></li>
+      <li><a  th:href="@{/logout}">Logout</a></li>
+
+    </ul>
+  </div>
+</section>
+
+<section id ="cart" class="section-p1">
+
+  <table width="100%" class="table">
+    <thead class="thead-light">
+    <tr>
+      <th scope="col">SN</th>
+      <th scope="col">CustomerName</th>
+      <th scope="col">CustomerEmail</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Enquiry</th>
+      <th scope="col">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="enquiry, iStat :${inquiries}">
+      <th scope="row" th:text="${iStat.index + 1}">1</th>
+      <td th:text="${enquiry.name}">Larry</td>
+      <td th:text="${enquiry.email}"></td>
+      <td th:text="${enquiry.subject}"></td>
+      <td th:text="${enquiry.enquiry}"></td>
+      <td><a th:href="@{/admin/enquiries/delete/{id}(id=${enquiry.id})}" class="btn btn-danger">Delete</a> </td>
+<!--      <td><a th:href="@{/admin/enquiries/update/{id}(id=${enquiry.id})}">Update</a> </td>-->
+    </tr>
+    </tbody>
+  </table>
+</section>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

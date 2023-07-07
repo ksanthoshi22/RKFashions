@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>RKFASHIONS</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link rel="stylesheet" href="" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<section id = "header">
+  <a href ="#"><img src= "" th:src="@{/images/logo.png} " width="100px"> </a>
+  <div>
+    <ul id ="navbar">
+      <li><a class="active" th:href="@{/index}">Home</a></li>
+      <li><a th:href="@{/products}">Products</a></li>
+      <li><a th:href="@{/contact}">Contact</a></li>
+      <li><a th:href="@{/login}">Login</a></li>
+      <li><a th:href="@{/cart}"><i class="fal fa-shopping-cart"></i></a></li>
+    </ul>
+  </div>
+</section>
+<section id = "hero"  >
+  <h1>Elevate Your Style</h1>
+  <h2>Embrace the Sparkle</h2>
+  <p>Explore our Collection</p>
+  <button onclick="window.location.href='Products.html'" th:href="@{/sProducts}"> shopnow </button>
+</section>
+<section id="feature" class=".section-p1">
+
+  <div class="fe-box">
+    <img src="../Images/Free shipping .png" th:src="@{/images/Free shipping .png} " alt="">
+    <button class="normal">Free Shipping</button>
+  </div>
+  <div class="fe-box">
+    <img src="../Images/order-online-sign.webp"  th:src="@{/images/order-online-sign.webp} " alt="">
+    <button class="normal">Online Order</button>
+  </div>
+  <div class="fe-box">
+    <img src="../Images/promotions.png"   th:src="@{/images/promotions.png} " alt="">
+    <button class="normal" onclick="window.location.href='saleitems.html'">Promotions</button>
+  </div>
+  <div class="fe-box">
+    <img src="../Images/Customer Support.png"  th:src="@{/images/Customer Support.png} " alt="">
+    <button class="normal">Customer Support</button>
+  </div>
+</section>
+<section id ="product1" class="section-p1">
+  <h2>Latest Arrivals</h2>
+  <p>Premium Bead Collection</p>
+  <div class="pro-container">
+    <div class="pro">
+      <img src=" " th:src="@{/images/coralwithpearls.jpg} " alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5>Corals with Pearls</h5>
+        <h4>$90</h4>
+      </div>
+      <a href ="#"><i class ="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="../Images/IMG_3076.jpg" th:src="@{/images/pearlsvictorianset.jpg} " alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5>Pearls with Pendant</h5>
+        <h4>$80</h4>
+      </div>
+      <a href ="#"><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="" th:src="@{/images/pearlset.jpeg} " alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5> pearls Choker</h5>
+        <h4>$60</h4>
+      </div>
+      <a href ="#"><i class ="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="../Images/beads.jpg" th:src="@{/images/beads.jpg} " alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5>Bead Collection</h5>
+        <h4>$300</h4>
+      </div>
+      <a href ="#"><i class ="fal fa-shopping-cart cart"></i></a>
+    </div>
+  </div>
+</section>
+<footer class="section-p1">
+  <div class="col">
+    <img class="logo" src="../Images/logo.png" th:src="@{/images/logo.png} " alt="">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> Morgans Secret Dr,Cypress,TX,77433</p>
+    <p><strong>Phone:</strong> (409)291-9013</p>
+    <p><strong>Hours:</strong> 10AM to 4PM , Monday to Saturday</p>
+    <div class="follow">
+      <h4>Follow Us</h4>
+      <div class ="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <h4>About</h4>
+    <a href = "#">About us</a>
+    <a href = "#">Delivery Information</a>
+    <a href = "#">Privacy Policy</a>
+    <a href = "#">Terms & Conditions</a>
+    <a href = "#">Contact us</a>
+  </div>
+  <div class="col">
+    <h4>My Account</h4>
+    <a href = "#">Account</a>
+    <a href = "#">Sign In</a>
+    <a href = "#">View Cart</a>
+    <a href = "#">Track My Order</a>
+    <a href = "#">Help</a>
+  </div>
+
+</footer>
+<script src="Script.js"></script>
+</body>
+</html>

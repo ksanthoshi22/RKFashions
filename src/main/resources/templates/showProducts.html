@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>RKFASHIONS</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link rel="stylesheet"  th:href="@{/css/style.css}"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet"  th:href="@{/css/adminProducts.css}"/>
+</head>
+<body>
+<section id = "header">
+  <a href ="#"><img  th:src="@{/images/logo.png}" width="100px"> </a>
+  <div>
+    <ul id ="navbar">
+      <li><a class="active" th:href="@{/admin}">Admin-Home</a></li>
+      <!--      <li><a href="login.html">Login</a></li>-->
+      <li><a  th:href="@{/logout}">Logout</a></li>
+
+    </ul>
+  </div>
+</section>
+
+<section id ="cart" class="section-p1">
+<div class="mb-3">
+  <a  th:href="@{/admin/products/add}"  class="card-link btn btn-primary">Add Product</a>
+  </div>
+  <table width="100%" class="table">
+    <thead class="thead-light">
+    <tr>
+      <th scope="col">SN</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Preview</th>
+      <th scope="col">Delete</th>
+      <th scope="col">Update</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product, iStat : ${products}">
+      <th scope="row" th:text="${iStat.index + 1}">1</th>
+      <td th:text="${product.name}">Larry</td>
+      <td th:text="${product.category.name}">Larry</td>
+      <td><img height="100px" width="100px" th:src="@{/productImages/{imageName}(imageName=${product.imageName})}"></td>
+<!--      <td>     <img src="#" id="imgPreview" height="100px" width="100px" th:src="@{${'/productImages/' +imageName}}"></td>-->
+      <td><a th:href="@{/admin/product/delete/{id}(id=${product.id})}" class="btn btn-danger">Delete</a> </td>
+      <td><a th:href="@{/admin/product/update/{id}(id=${product.id})}" class="btn btn-warning">Update</a> </td>
+    </tr>
+    </tbody>
+  </table>
+</section>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

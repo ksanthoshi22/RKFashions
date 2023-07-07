@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>RKFASHIONS</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link rel="stylesheet"  th:href="@{/css/style.css}"/>
+</head>
+<body>
+<section id = "header">
+  <a href ="#"><img th:src="@{/images/logo.png} " width="100px"> </a>
+  <div>
+    <ul id ="navbar">
+      <li><a href="index.html" th:href="@{/index}">Home</a></li>
+      <li><a class="active" href="products.html" th:href="@{/products}">Products</a></li>
+      <li><a href="contact.html" th:href="@{/contact}">Contact</a></li>
+      <li><a th:href="@{/login}">Login</a></li>
+      <li><a href="cart.html"th:href="@{/cart}"><i class="fa fa-shopping-cart"></i></a></li>
+    </ul>
+  </div>
+</section>
+<section id = "page-header">
+
+  <h2 style="color: rgb(199, 202, 27);">#stayhome</h2>
+  <p style="color: rgb(206, 206, 186);"> Explore our Collection</p>
+
+</section>
+<section id ="product1" class="section-p1">
+  <div class="pro-container">
+    <div class="pro" th:onclick="window.location.href='sProducts'">
+      <img  th:src="@{/images/coralwithpearls.jpg} " alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5>Corals with Pearls</h5>
+        <h4>$90</h4>
+      </div>
+      <a href ="#"><i class ="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="../Images/IMG_3076.jpg"  th:src="@{/images/pearlsvictorianset.jpg} " alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5>Pearls with Pendant</h5>
+        <h4>$80</h4>
+      </div>
+      <a href ="#"><i class="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img   th:src="@{/images/pearlset.jpeg}" alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5> pearls Choker</h5>
+        <h4>$60</h4>
+      </div>
+      <a href ="#"><i class ="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="../Images/IMG_3085.jpg"   th:src="@{/images/beads.jpg}" alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5>Bead Collection</h5>
+        <h4>$300</h4>
+      </div>
+      <a href ="#"><i class ="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="../Images/moissaniteset.JPG"   th:src="@{/images/moissaniteset.jpg}" alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5>Bead Collection</h5>
+        <h4>$45</h4>
+      </div>
+      <a href ="#"><i class ="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="../Images/maangtikkas.jpg"   th:src="@{/images/maangtikkas.jpg}" alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5>Bead Collection</h5>
+        <h4>$27</h4>
+      </div>
+      <a href ="#"><i class ="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="../Images/corals.jpg"   th:src="@{/images/corals.jpg}" alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5>Bead Collection</h5>
+        <h4>$75</h4>
+      </div>
+      <a href ="#"><i class ="fal fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="../Images/IMG_8127.jpg"  th:src="@{/images/tanzanitebeads.jpg}" alt="">
+      <div class="des">
+        <span> Beads</span>
+        <h5>Bead Collection</h5>
+        <h4>$30</h4>
+      </div>
+      <a href ="#"><i class ="fal fa-shopping-cart cart"></i></a>
+    </div>
+  </div>
+</section>
+<section id ="pagination" class="section-p1">
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#"><i class="fal fa-long-arrow-right"></i></a>
+</section>
+<footer class="section-p1">
+  <div class="col">
+    <img class="logo" src="../Images/logo.png"  alt="">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> Morgans Secret Dr,Cypress,TX,77433</p>
+    <p><strong>Phone:</strong> (409)291-9013</p>
+    <p><strong>Hours:</strong> 10AM to 4PM , Monday to Saturday</p>
+    <div class="follow">
+      <h4>Follow Us</h4>
+      <div class ="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <h4>About</h4>
+    <a href = "#">About us</a>
+    <a href = "#">Delivery Information</a>
+    <a href = "#">Privacy Policy</a>
+    <a href = "#">Terms & Conditions</a>
+    <a href = "#">Contact us</a>
+  </div>
+  <div class="col">
+    <h4>My Account</h4>
+    <a href = "#">Account</a>
+    <a href = "#">Sign In</a>
+    <a href = "#">View Cart</a>
+    <a href = "#">Track My Order</a>
+    <a href = "#">Help</a>
+  </div>
+
+</footer>
+
+
+<script >
+
+  var MainImg = document.getElementById("MainImg");
+        var smallImg = document.getElementsByClassName("small-img");
+        smallImg[0].onclick = function(){
+            MainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function(){
+            MainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function(){
+            MainImg.src = smallImg[2].src;
+        }
+
+</script>
+</body>
+</html>

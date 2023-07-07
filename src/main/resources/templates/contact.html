@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>RKFASHIONS</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link rel="stylesheet"  th:href="@{/css/style.css}"/>
+</head>
+<body>
+<section id = "header">
+  <a href ="#"><img th:src="@{/images/logo.png} "width="100px"> </a>
+  <div>
+    <ul id ="navbar">
+      <li><a  th:href="@{/index}">Home</a></li>
+      <li><a  th:href="@{/products}">Products</a></li>
+      <li><a class="active"  th:href="@{/contact}">Contact</a></li>
+<!--      <li><a th:href="@{/login}">Login</a></li>-->
+      <li><a  th:href="@{/cart}"><i class="fa fa-shopping-cart"></i></a></li>
+    </ul>
+  </div>
+</section>
+<section id = "page-header">
+
+  <h2 style="color: rgb(199, 202, 27);">#For Enquiries</h2>
+  <p style="color: rgb(206, 206, 186);">PLEASE LEAVE A MESSAGE , we will get back to you in 24 hours</p>
+
+</section>
+<section id="contact-details" class="section-p1">
+  <div class="details">
+    <span>Shop @</span>
+    <h2>Visit our store inperson or contact us today</h2>
+    <h3>Store Location</br></h3>
+    <div>
+      <li>
+        <i class="fal fa-map"></i>
+        <p>17447 Morgans Secret Dr Cypress TX </p>
+      </li>
+      <li>
+        <i class="fal fa-envelope"></i>
+        <p>contact us @rkfashions.us@gmail.com</p>
+      </li>
+      <li>
+        <i class="fal fa-phone-alt"></i>
+        <p>(409)291-9013 </p>
+      </li>
+      <li>
+        <i class="fal fa-clock"></i>
+        <p>Monday to Sunday: 10AM to 6PM </p>
+      </li>
+    </div>
+  </div>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.
+            9511182640076!2d-95.72624292569995!3d29.952084622943076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+            1!3m3!1m2!1s0x8640d5fa390bb313%3A0xda6c492447e458ef!2sFirst%20Bend%2C%2017447%20Morgans%20Secret%20Dr%2C%20Cypress%2C%20TX%2077433!5e0!3m2!1sen!2sus!4v1685804051932!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+  <section id="form-details">
+    <form action="#" th:action="@{/inquiries}" th:object="${enquiry}" method="post" >
+      <span> LEAVE A MESSAGE</span>
+      <h2>Write your Enquiry</h2>
+      <input type="text" name="name" th:value="${enquiry?.name}"  placeholder="Your Name">
+      <input type="text" name="email" th:value="${enquiry?.email}" placeholder="E-mail">
+      <input type="text" name="subject" th:value="${enquiry?.subject}" placeholder="Subject">
+      <textarea name="enquiry" id="" cols="30" rows="10" th:value="${enquiry?.enquiry}" placeholder="Your Enquiry"></textarea>
+      <button class="normal"  type="submit">Submit</button>
+    </form>
+  <div class="people">
+    <div>
+      <img th:src="@{/images/pexels-andrea-piacquadio-762020.jpg} " alt="">
+      <p><span>Sneha Komirelly</span>Owner/Designer<br>
+        Phone:+001 409 291 9013<br>Email:rkfashions.us@gmail.com</p>
+    </div>
+    <div>
+      <img th:src="@{/images/pexels-andrea-piacquadio-785667.jpg} " alt="">
+      <p><span>Sam Komirelly</span>Fashion Designer<br>
+        Phone:+91 1237 122 456 <br>Email:example.us@gmail.com</p>
+    </div>
+    <div>
+      <img th:src="@{/images/pexels-sumit-kapoor-718261.jpg} " alt="">
+      <p><span>Siva Komirelly</span>Marketing Manager<br>
+        Phone:+001 409 556 9013<br>Email:rkfashions.us@gmail.com</p>
+    </div>
+
+  </div>
+
+
+</section>
+
+<footer class="section-p1">
+  <div class="col">
+    <img class="logo" th:src="@{/images/logo.png} " alt="">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> Morgans Secret Dr,Cypress,TX,77433</p>
+    <p><strong>Phone:</strong> (409)291-9013</p>
+    <p><strong>Hours:</strong> 10AM to 4PM , Monday to Saturday</p>
+    <div class="follow">
+      <h4>Follow Us</h4>
+      <div class ="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <h4>About</h4>
+    <a href = "#">About us</a>
+    <a href = "#">Delivery Information</a>
+    <a href = "#">Privacy Policy</a>
+    <a href = "#">Terms & Conditions</a>
+    <a href = "#">Contact us</a>
+  </div>
+  <div class="col">
+    <h4>My Account</h4>
+    <a href = "#">Account</a>
+    <a href = "#">Sign In</a>
+    <a href = "#">View Cart</a>
+    <a href = "#">Track My Order</a>
+    <a href = "#">Help</a>
+  </div>
+
+</footer>
+
+
+<script src="Script.js"></script>
+</body>
+</html>
