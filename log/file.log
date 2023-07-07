@@ -7717,3 +7717,55 @@ Caused by: java.lang.IllegalStateException: Failed to replace DataSource with an
 2023-07-07 16:48:48.638 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-07-07 16:48:48.640 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2023-07-07 16:48:48.661 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-07 18:11:34.345 INFO  R.E.repository.EnquiryRepositoryTest - Starting EnquiryRepositoryTest using Java 11.0.18 on LAPTOP-9MPLLM2T with PID 13288 (started by tsant in C:\Users\tsant\IdeaProjects\SpringJava\Ecommercewebsite)
+2023-07-07 18:11:34.347 INFO  R.E.repository.EnquiryRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2023-07-07 18:11:34.431 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-07 18:11:37.506 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-07 18:11:37.510 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-07-07 18:11:37.643 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-07 18:11:37.651 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.EnquiryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-07 18:11:37.659 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-07 18:11:37.661 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 0 JDBC repository interfaces.
+2023-07-07 18:11:37.691 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-07 18:11:37.694 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-07 18:11:37.907 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 201 ms. Found 3 JPA repository interfaces.
+2023-07-07 18:11:40.224 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-07 18:11:40.478 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-07 18:11:41.352 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-07 18:11:42.234 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-07 18:11:43.449 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-07 18:11:43.520 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-07-07 18:11:47.193 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-07 18:11:47.218 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-07 18:11:49.551 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-07 18:11:50.517 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-07-07 18:11:52.325 INFO  R.E.repository.EnquiryRepositoryTest - Started EnquiryRepositoryTest in 19.553 seconds (JVM running for 23.446)
+2023-07-07 18:11:53.587 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-07 18:11:53.592 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-07 18:11:53.619 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-07 18:12:54.142 INFO  R.E.repository.EnquiryRepositoryTest - Starting EnquiryRepositoryTest using Java 11.0.18 on LAPTOP-9MPLLM2T with PID 16532 (started by tsant in C:\Users\tsant\IdeaProjects\SpringJava\Ecommercewebsite)
+2023-07-07 18:12:54.144 INFO  R.E.repository.EnquiryRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2023-07-07 18:12:54.178 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-07 18:12:57.364 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-07 18:12:57.368 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-07-07 18:12:57.442 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-07 18:12:57.444 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.EnquiryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-07 18:12:57.449 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-07 18:12:57.450 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 0 JDBC repository interfaces.
+2023-07-07 18:12:57.509 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-07 18:12:57.512 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-07 18:12:57.764 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 206 ms. Found 3 JPA repository interfaces.
+2023-07-07 18:13:00.059 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-07 18:13:00.228 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-07 18:13:00.969 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-07 18:13:01.788 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-07 18:13:03.011 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-07 18:13:03.089 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-07-07 18:13:06.576 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-07 18:13:06.601 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-07 18:13:09.963 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-07 18:13:11.374 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-07-07 18:13:14.195 INFO  R.E.repository.EnquiryRepositoryTest - Started EnquiryRepositoryTest in 21.619 seconds (JVM running for 25.266)
+2023-07-07 18:13:15.778 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-07 18:13:15.787 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-07 18:13:15.848 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
