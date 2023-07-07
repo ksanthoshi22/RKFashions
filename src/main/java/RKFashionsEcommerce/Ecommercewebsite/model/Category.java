@@ -1,18 +1,23 @@
 package RKFashionsEcommerce.Ecommercewebsite.model;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Data
-@NoArgsConstructor
+@Builder
 @AllArgsConstructor
+@NoArgsConstructor
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="category_id")
     private Long id;
+    @NotNull
     private String name;
+
+    public Category(String name) {
+        this.name = name;
+    }
 }
