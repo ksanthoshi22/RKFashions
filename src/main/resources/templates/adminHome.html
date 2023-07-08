@@ -4,124 +4,51 @@
   <meta charset="UTF-8">
   <title>RKFASHIONS</title>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
-  <link rel="stylesheet" th:href="@{css/style.css}"/>
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-        #feature {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.fe-box {
-  width: 50%;
-  padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-}
-.section-p1{
-  background-color:#e3e6f3
-}
-.card-title {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.card-text {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.card-link {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.btn-primary:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
-}
-    </style>
+    .center-content {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
 <body>
-<section id = "header">
-  <a href ="#"><img  th:src="@{/images/logo.png} " width="100px"> </a>
+<section id="header">
+  <a href="#"><img th:src="@{/images/logo.png}" width="100px"></a>
   <div>
-    <ul id ="navbar">
-      <li><a class="active" th:href="@{/adminHome}">Admin-Home</a></li>
-<!--      <li><a  th:href="@{/login}" >Login</a></li>-->
-      <li><a  th:href="@{/logout}">Logout</a></li>
-
+    <ul id="navbar">
+      <li><a href="index.html" th:href="@{/index}">Home</a></li>
+      <li><a class="active" href="products.html" th:href="@{/products}">Products</a></li>
+      <li><a href="contact.html" th:href="@{/contact}">Contact</a></li>
+      <li><a th:href="@{/login}">Login</a></li>
+      <li><a href="cart.html" th:href="@{/cart}"><i class="fa fa-shopping-cart"></i></a></li>
     </ul>
   </div>
 </section>
-<section id = "page-header">
-
-  <h1 style="color: rgb(199, 202, 27);">#Welcome back,Admin</h1>
-  <p style="color: rgb(206, 206, 186);">Easily manage your data from this admin CMS</p>
-
-</section>
-<section id="feature" class=".section-p1">
-
-  <div class="fe-box">
-    <h4 class="card-title">Products</h4>
-    <p class="card-text">Manage the products section here.</p>
-    <a href="#" th:href="@{/admin/products}" class="card-link btn btn-primary">Manage</a>
-  </div>
-  <div class="fe-box" >
-    <h4 class="card-title">Categories</h4>
-    <p class="card-text">Manage the categories section here.</p>
-    <a href="#" th:href="@{/admin/categories}" class="card-link btn btn-primary">Manage</a>
-  </div>
-  <div class="fe-box" >
-    <h4 class="card-title">Enquiries</h4>
-    <p class="card-text">Click it to check Enquiries.</p>
-    <a href="#" th:href="@{/admin/inquiries}" class="card-link btn btn-primary">Manage</a>
-  </div>
-
-</section>
-<footer class="section-p1">
-  <div class="col">
-    <img class="logo" src="../Images/logo.png" th:src="@{/images/logo.png} " alt="">
-    <h4>Contact</h4>
-    <p><strong>Address:</strong> Morgans Secret Dr,Cypress,TX,77433</p>
-    <p><strong>Phone:</strong> (409)291-9013</p>
-    <p><strong>Hours:</strong> 10AM to 4PM , Monday to Saturday</p>
-    <div class="follow">
-      <h4>Follow Us</h4>
-      <div class ="icon">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-youtube"></i>
+<div class="container center-content">
+  <div class="row">
+    <div class="col-lg-4 col-md-12">
+      <div class="d-flex justify-content-center">
+        <img class="img-fluid" height="150px" width="150px"
+             th:src="@{/productImages/{imageName}(imageName=${product.imageName})}">
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" th:text="${product.name}"></h5>
+          <h6 th:text="${product.category}"></h6>
+          <h4>$<span th:text="${product.price}"></span></h4>
+          <p th:text="${product.description}"></p>
+          <a href="#" th:href="@{/shop/viewCart/{id}(id=${product.id})}" class="btn btn-primary">Add to cart</a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col">
-    <h4>About</h4>
-    <a href = "#">About us</a>
-    <a href = "#">Delivery Information</a>
-    <a href = "#">Privacy Policy</a>
-    <a href = "#">Terms & Conditions</a>
-    <a href = "#">Contact us</a>
-  </div>
-  <div class="col">
-    <h4>My Account</h4>
-    <a href = "#">Account</a>
-    <a href = "#">Sign In</a>
-    <a href = "#">View Cart</a>
-    <a href = "#">Track My Order</a>
-    <a href = "#">Help</a>
-  </div>
-
-</footer>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

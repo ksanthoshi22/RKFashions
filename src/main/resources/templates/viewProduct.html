@@ -4,42 +4,62 @@
   <meta charset="UTF-8">
   <title>RKFASHIONS</title>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
-  <link rel="stylesheet"  th:href="@{/css/style.css}"/>
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .center-content {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .card {
+      border: none;
+    }
+
+    .product-image {
+      width: 400px;
+      height: auto;
+    }
+
+    .product-name {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-<section id = "header">
-  <a href ="#"><img th:src="@{/images/logo.png} " width="100px"> </a>
+<section id="header">
+  <a href="#"><img th:src="@{/images/logo.png}" width="100px"></a>
   <div>
-    <ul id ="navbar">
+    <ul id="navbar">
       <li><a href="index.html" th:href="@{/index}">Home</a></li>
       <li><a class="active" href="products.html" th:href="@{/products}">Products</a></li>
       <li><a href="contact.html" th:href="@{/contact}">Contact</a></li>
       <li><a th:href="@{/login}">Login</a></li>
-      <li><a href="cart.html"th:href="@{/cart}"><i class="fa fa-shopping-cart"></i></a></li>
+      <li><a href="cart.html" th:href="@{/cart}"><i class="fa fa-shopping-cart"></i></a></li>
     </ul>
   </div>
 </section>
-<div class="container" style="">
+<div class="container center-content">
   <div class="row">
-    <div class="col-sm-3">
-      <div class="col-sm-5 d-flex justify-content-center">
-        <img class="" height="150px" width="150px"
+    <div class="col-lg-5 col-md-12">
+      <div class="d-flex justify-content-center">
+        <img class="img-fluid product-image"
              th:src="@{/productImages/{imageName}(imageName=${product.imageName})}">
       </div>
     </div>
-    <div class="col-sm-9">
-      <div class="card" style="" th:each="product:${products}">
-        <div class="row no-gutters">
-          <div class="col-sm-5 d-flex justify-content-center">
-            <h5 class="card-title" th:text="${product.name}"></h5>
-            <h6 th:text="${product.category}"></h6>
-            <h4>$ <span th:text="${product.price}"></span></h4>
-            <p th:text="${product.description}"></p>
-            <a href="#" th:href="@{/shop/viewCart/{id}(id=${product.id})}"  class="btn btn-primary"> Add to cart</a>
-          </div>
+    <div class="col-lg-7 col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title product-name" th:text="${product.name}"></h5>
+          <h6 th:text="${product.category.name}"></h6>
+          <h4>$<span th:text="${product.price}"></span></h4>
+          <p th:text="${product.description}"></p>
+          <a href="#" th:href="@{/shop/viewCart/{id}(id=${product.id})}" class="btn btn-primary">Add to cart</a>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 </div>
