@@ -1,5 +1,6 @@
 package RKFashionsEcommerce.Ecommercewebsite.repository;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import RKFashionsEcommerce.Ecommercewebsite.model.Enquiry;
@@ -86,6 +87,7 @@ public class EnquiryRepositoryTest {
 
         assertTrue(enquiries.contains(enquiry1));
         assertTrue(enquiries.contains(enquiry2));
+
     }
 }
 
