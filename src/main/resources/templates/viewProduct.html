@@ -6,13 +6,27 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
   <link rel="stylesheet" th:href="@{/css/style.css}"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="" th:href="@{/css/footer.css}"/>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    .container {
+      margin-top: 40px;
+    }
+
     .center-content {
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 50px;
     }
 
     .card {
@@ -20,7 +34,7 @@
     }
 
     .product-image {
-      width: 400px;
+      width: 300px;
       height: auto;
     }
 
@@ -42,27 +56,61 @@
     </ul>
   </div>
 </section>
-<div class="container center-content">
+<div class="container">
   <div class="row">
-    <div class="col-lg-5 col-md-12">
-      <div class="d-flex justify-content-center">
+    <div class="col-lg-5 col-md-12 d-flex justify-content-center">
+      <div class="d-flex align-items-center">
         <img class="img-fluid product-image"
              th:src="@{/productImages/{imageName}(imageName=${product.imageName})}">
       </div>
     </div>
-    <div class="col-lg-7 col-md-12">
+    <div class="col-lg-7 col-md-12 d-flex align-items-center">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title product-name" th:text="${product.name}"></h5>
           <h6 th:text="${product.category.name}"></h6>
           <h4>$<span th:text="${product.price}"></span></h4>
           <p th:text="${product.description}"></p>
-          <a href="#" th:href="@{/shop/viewCart/{id}(id=${product.id})}" class="btn btn-primary">Add to cart</a>
+          <a href="#" th:href="@{/addToCart/{id}(id=${product.id})}" class="btn btn-primary">Add to cart</a>
         </div>
       </div>
     </div>
   </div>
 </div>
+<footer class="section-p1">
+  <div class="col">
+    <img class="logo" src="../Images/logo.png" th:src="@{/images/logo.png} " alt="">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> Morgans Secret Dr,Cypress,TX,77433</p>
+    <p><strong>Phone:</strong> (409)291-9013</p>
+    <p><strong>Hours:</strong> 10AM to 4PM , Monday to Saturday</p>
+    <div class="follow">
+      <h4>Follow Us</h4>
+      <div class ="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <h4>About</h4>
+    <a href = "#">About us</a>
+    <a href = "#">Delivery Information</a>
+    <a href = "#">Privacy Policy</a>
+    <a href = "#">Terms & Conditions</a>
+    <a href = "#">Contact us</a>
+  </div>
+  <div class="col">
+    <h4>My Account</h4>
+    <a href = "#">Account</a>
+    <a href = "#">Sign In</a>
+    <a href = "#">View Cart</a>
+    <a href = "#">Track My Order</a>
+    <a href = "#">Help</a>
+  </div>
+
+</footer>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

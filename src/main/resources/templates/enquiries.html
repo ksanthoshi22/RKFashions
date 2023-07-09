@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 </head>
-<body>
+<body style="background-image: url('/images/watercolor.png'); background-repeat: no-repeat;
+  background-size: cover;">
 <section id = "header">
       <a href ="#"><img src= "" th:src="@{/images/logo.png} " width="100px"> </a>
   <div>
@@ -25,22 +26,22 @@
   <table width="100%" class="table">
     <thead class="thead-light">
     <tr>
-      <th scope="col">SN</th>
-      <th scope="col">CustomerName</th>
-      <th scope="col">CustomerEmail</th>
-      <th scope="col">Subject</th>
-      <th scope="col">Enquiry</th>
-      <th scope="col">Delete</th>
+      <th class="text-left" scope="col">SN</th>
+      <th class="text-left" scope="col">CustomerName</th>
+      <th class="text-left" scope="col">CustomerEmail</th>
+      <th class="text-left" scope="col">Subject</th>
+      <th class="text-left" scope="col">Enquiry</th>
+      <th class="text-left" scope="col">Delete</th>
     </tr>
     </thead>
     <tbody>
-    <tr th:each="enquiry, iStat :${inquiries}">
-      <th scope="row" th:text="${iStat.index + 1}">1</th>
-      <td th:text="${enquiry.name}">Larry</td>
-      <td th:text="${enquiry.email}"></td>
-      <td th:text="${enquiry.subject}"></td>
-      <td th:text="${enquiry.enquiry}"></td>
-      <td><a th:href="@{/admin/enquiries/delete/{id}(id=${enquiry.id})}" class="btn btn-danger">Delete</a> </td>
+    <tr class="text-left" th:each="enquiry, iStat :${inquiries}">
+      <th class="text-left" scope="row" th:text="${iStat.index + 1}">1</th>
+      <td class="text-left" th:text="${enquiry.name}">Larry</td>
+      <td class="text-left" th:text="${enquiry.email}"></td>
+      <td class="text-left" th:text="${enquiry.subject}"></td>
+      <td class="text-left" th:text="${enquiry.enquiry}"></td>
+      <td class="text-left" ><a th:href="@{/admin/enquiries/delete/{id}(id=${enquiry.id})}" class="btn btn-danger">Delete</a> </td>
 <!--      <td><a th:href="@{/admin/enquiries/update/{id}(id=${enquiry.id})}">Update</a> </td>-->
     </tr>
     </tbody>

@@ -1,6 +1,7 @@
 package RKFashionsEcommerce.Ecommercewebsite.controller;
 
 import RKFashionsEcommerce.Ecommercewebsite.dto.ProductDTO;
+import RKFashionsEcommerce.Ecommercewebsite.exception.ProductNotFoundException;
 import RKFashionsEcommerce.Ecommercewebsite.model.Product;
 import RKFashionsEcommerce.Ecommercewebsite.service.CategoryService;
 import RKFashionsEcommerce.Ecommercewebsite.service.ProductService;
@@ -20,7 +21,7 @@ import java.nio.file.StandardCopyOption;
 import java.util.Base64;
 @Controller
 public class ProductController {
-      //public static String uploadDir = System.getProperty("user.dir") + "/src/main/resources/static/productImages";
+
       public String uploadDir = "src/main/resources/static/productImages";
     @Autowired
     ProductService productService;
@@ -36,12 +37,15 @@ public class ProductController {
     public String getSProductsPage() {
         return "sProducts";
     }
+
     @GetMapping("/admin/products/add")
     public String productAddGet(Model model){
         model.addAttribute("productDTO",new ProductDTO());
         model.addAttribute("categories",categoryService.getAllCategory());
         return "productsAdd";
     }
+
+
     @PostMapping("/admin/products/add")
     public String productAddPost(@ModelAttribute("productDto")ProductDTO productDTO,
                                  @RequestParam("productImage") MultipartFile file,

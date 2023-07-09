@@ -119,7 +119,7 @@ body{
     font-size:x-large;
 }
 #hero button{
-    background-image: url("../Images/logo.png");
+    background-image: url('/images/logo.png');
     background-color: transparent;
     color: #088178;
     border:0;
@@ -273,7 +273,7 @@ cursor: pointer;
 }
 /* products page*/
 #page-header{
-    background-image: url("../Images/pexels-mahadee-hasan-15849290.jpg");
+    background-image: url('/images/pexels-mahadee-hasan-15849290.jpg');
     width: 100%;
     height:40vh;
     background-size: cover;
