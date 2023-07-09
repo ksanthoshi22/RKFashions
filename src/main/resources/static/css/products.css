@@ -1,5 +1,12 @@
 /* style.css */
 
+  body {
+  background-image: url('/images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  }
+
 /* Container styling */
 .container {
   max-width: 800px;

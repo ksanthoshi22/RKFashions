@@ -25,7 +25,7 @@ public class EnquiryController {
     public String postInquiry( @ModelAttribute("inquiry") Enquiry enquiry) {
 
         enquiryService.saveInquiry(enquiry);
-        return "success";
+        return "contact";
 
     }
     @GetMapping("/admin/inquiries")

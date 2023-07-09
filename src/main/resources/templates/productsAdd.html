@@ -5,15 +5,17 @@
   <title>RKFASHIONS</title>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
   <link rel="stylesheet" th:href="@{/css/style.css}"/>
+
   <link rel="stylesheet"  th:href="@{/css/products.css}">
 </head>
-<body>
+
+<body >
 <section id = "header">
   <a href ="#"><img src= "" th:src="@{/images/logo.png} " width="100px"> </a>
   <div>
     <ul id ="navbar">
       <li><a class="active" th:href="@{/admin}">Admin-Home</a></li>
-<!--      <li><a th:href="@{/login}">Login</a></li>-->
+      <!--      <li><a th:href="@{/login}">Login</a></li>-->
       <li><a  th:href="@{/logout}">Logout</a></li>
 
     </ul>
@@ -90,5 +92,6 @@
     });
 
 </script>
+
 </body>
 </html>

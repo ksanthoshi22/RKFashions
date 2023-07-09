@@ -37,12 +37,7 @@ public class AdminController {
         return "categoriesAdd";
 
     }
-//    @PostMapping("/admin/categories/add")
-//    public String postCatAdd( @ModelAttribute("category") Category category) {
-//        categoryService.addCategory(category);
-//        return "redirect:/admin/categories";
-//
-//    }
+
     @PostMapping("/admin/categories/add")
     public String postCatAdd(@ModelAttribute("category") Category category, Model model) {
     if (categoryService.doesCategoryExist(category.getName())) {
@@ -63,22 +58,7 @@ public class AdminController {
             return "/failure";
         }
     }
-//@GetMapping("/admin/categories/delete/{id}")
-//public String deleteCategory(@PathVariable long id, Model model) {
-//    Optional<Category> category = categoryService.getCategoryById(id);
-//    if (category.isPresent()) {
-//        if (productRepository.findAllByCategory_Id(id).isEmpty()) {
-//            categoryService.removeCategoryById(id);
-//            return "redirect:/admin/categories";
-//        } else {
-//            model.addAttribute("errorMessage", "Cannot delete category. Associated products exist.");
-//        }
-//    } else {
-//        model.addAttribute("errorMessage", "Category not found.");
-//    }
-//    model.addAttribute("categories", categoryService.getAllCategory());
-//    return "categories";
-//}
+
 
     @GetMapping("/admin/categories/update/{id}")
     public String updateCategory(@PathVariable long id,Model model) {

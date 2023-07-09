@@ -29,11 +29,11 @@ public class HomeController {
 
         return "contact";
     }
-    @GetMapping("/cart")
-    public String cart(){
-
-        return "cart";
-    }
+//    @GetMapping("/cart")
+//    public String cart(){
+//
+//        return "cart";
+//    }
     @GetMapping({"/","/home"})
     public String home(Model model){
         return "index";
