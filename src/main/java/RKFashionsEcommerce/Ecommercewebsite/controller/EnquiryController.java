@@ -3,6 +3,7 @@ package RKFashionsEcommerce.Ecommercewebsite.controller;
 import RKFashionsEcommerce.Ecommercewebsite.model.Enquiry;
 import RKFashionsEcommerce.Ecommercewebsite.service.EnquiryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,8 +31,14 @@ public class EnquiryController {
     }
     @GetMapping("/admin/inquiries")
     public String getInquiries(Model model) {
-        List<Enquiry> inquiries = enquiryService.getAllInquiries();
-        model.addAttribute("inquiries", inquiries);
-        return "enquiries";
+        try {
+            List<Enquiry> inquiries = enquiryService.getAllInquiries();
+            model.addAttribute("inquiries", inquiries);
+            return "enquiries";
+
+        } catch (DataAccessException ex) {
+            model.addAttribute("errorMessage", "An error occurred while retrieving inquiries.");
+            return "errorPage";
+        }
     }
 }

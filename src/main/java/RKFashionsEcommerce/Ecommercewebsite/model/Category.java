@@ -1,8 +1,9 @@
 package RKFashionsEcommerce.Ecommercewebsite.model;
+
 import lombok.*;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+
 
 @Entity
 @Data
@@ -14,7 +15,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="category_id")
     private Long id;
-    @NotNull
+
     private String name;
 
     public Category(String name) {

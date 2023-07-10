@@ -1,4 +1,6 @@
 package RKFashionsEcommerce.Ecommercewebsite.model;
+
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
