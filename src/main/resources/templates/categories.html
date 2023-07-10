@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" th:href="@{/css/style.css}"/>
 
+
 </head>
 <body style="background-image: url('/images/pexels-pixabay-458766.jpg');">
 <section id = "header">
@@ -49,14 +50,15 @@
   </table>
 </section>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-  function confirmDelete(id) {
-      event.preventDefault();
-      if (confirm("Are you sure you want to delete this category?")) {
-        window.location.href = "/admin/categories/delete/" + id;
-      }
-    }
-</script>
+<script src="js/category.js"></script>
+<!--<script>-->
+<!--  function confirmDelete(id) {-->
+<!--      event.preventDefault();-->
+<!--      if (confirm("Are you sure you want to delete this category?")) {-->
+<!--        window.location.href = "/admin/categories/delete/" + id;-->
+<!--      }-->
+<!--    }-->
+<!--</script>-->
 
 </body>
 </html>

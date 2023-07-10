@@ -1,9 +1,10 @@
 package RKFashionsEcommerce.Ecommercewebsite.model;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
 import javax.persistence.*;
+
 
 @Entity
 @Data

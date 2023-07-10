@@ -34,10 +34,10 @@ public class HomeController {
 //
 //        return "cart";
 //    }
-    @GetMapping({"/","/home"})
-    public String home(Model model){
-        return "index";
-    }
+//    @GetMapping({"/","/home"})
+//    public String home(Model model){
+//        return "index";
+//    }
     @GetMapping("/shop")
     public String shop(Model model) {
         model.addAttribute("categories", categoryService.getAllCategory());
@@ -55,5 +55,10 @@ public class HomeController {
     public String viewProduct(Model model, @PathVariable long id) {
         model.addAttribute("product", productService.getProductById(id).get());
         return "viewProduct";
+    }
+    @GetMapping("/logout")
+    public String logout(){
+
+        return "login";
     }
 }
