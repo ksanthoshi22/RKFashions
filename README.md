@@ -31,10 +31,13 @@ RKFASHIONS Jewelry Store is a web-based application that allows users to shop th
 2. Register an account as a user to access the shopping features.
 3. Browse the product catalog and add items to the cart.
 4. Admins can log in using the admin credentials naviagate to admin portal by clicking Admin in nav bar to manage products, categories, and view inquiries.
-
+5. Feel free to add categories and products from Admin page , those products will reflect in shop page. which User can view products by category and able to add to cart.
 ## Technologies Used
 
 HTML | CSS | JavaScript | Thymeleaf | MySQL | SQL Workbench | Spring Boot | Spring Security | Spring Data JPA
+## Database Schema
+
+![schemadiagram.png](target%2Fschemadiagram.png)
 
 ## Contributing
 
