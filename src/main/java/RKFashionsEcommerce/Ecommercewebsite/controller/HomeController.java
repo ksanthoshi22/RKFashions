@@ -3,6 +3,8 @@ package RKFashionsEcommerce.Ecommercewebsite.controller;
 import RKFashionsEcommerce.Ecommercewebsite.service.CategoryService;
 import RKFashionsEcommerce.Ecommercewebsite.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,11 +16,7 @@ public class HomeController {
     CategoryService categoryService;
     @Autowired
     ProductService productService;
-    @GetMapping("/index")
-    public String index(){
 
-        return "index";
-    }
     @GetMapping("/products")
     public String products(){
 
@@ -29,15 +27,21 @@ public class HomeController {
 
         return "contact";
     }
-//    @GetMapping("/cart")
-//    public String cart(){
-//
-//        return "cart";
-//    }
-//    @GetMapping({"/","/home"})
-//    public String home(Model model){
-//        return "index";
-//    }
+
+    @GetMapping({"/", "/home", "/index"})
+    public String home(Model model){
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        model.addAttribute("isAdmin", false);
+        model.addAttribute("loggedIn", false);
+        if (authentication != null && authentication.isAuthenticated() &&
+                !authentication.getName().equals("anonymousUser")) {
+            boolean isAdmin = authentication.getAuthorities().stream()
+                    .anyMatch(role -> role.getAuthority().equals("ROLE_ADMIN"));
+            model.addAttribute("isAdmin", isAdmin);
+            model.addAttribute("loggedIn", true);
+        }
+        return "index";
+    }
     @GetMapping("/shop")
     public String shop(Model model) {
         model.addAttribute("categories", categoryService.getAllCategory());
@@ -58,7 +62,6 @@ public class HomeController {
     }
     @GetMapping("/logout")
     public String logout(){
-
-        return "login";
+        return "redirect:/home";
     }
 }

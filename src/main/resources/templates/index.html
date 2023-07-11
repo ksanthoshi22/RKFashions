@@ -15,10 +15,11 @@
       <li><a class="active" th:href="@{/index}">Home</a></li>
       <li><a th:href="@{/products}">Products</a></li>
       <li><a th:href="@{/shop}">Shop</a></li>
+      <li th:if="${isUser}"><a href="/shop">User</a></li>
       <li><a th:href="@{/contact}">Contact</a></li>
-        <li><a  th:href="@{/admin}">Admin</a></li>
-      <li><a th:href="@{/login}">Login</a></li>
-      <li><a  th:href="@{/logout}">Logout</a></li>
+      <li th:if="${isAdmin}"><a href="/admin">Admin</a></li>
+      <li th:unless="${loggedIn}"><a href="/login">Login</a></li>
+      <li th:if="${loggedIn}"><a href="/logout">Logout</a></li>
       <li><a th:href="@{/cart}"><i class="fal fa-shopping-cart"></i></a></li>
     </ul>
   </div>
@@ -27,7 +28,9 @@
   <h1>Elevate Your Style</h1>
   <h2>Embrace the Sparkle</h2>
   <p>Explore our Collection</p>
-  <button onclick="location.href='/shop'">Shop Now</button>
+  <a th:href="@{/shop}">
+    <button type="button" class="btn btn-primary">Shop Now</button>
+  </a>
 </section>
 <section id="feature" class=".section-p1">
 
