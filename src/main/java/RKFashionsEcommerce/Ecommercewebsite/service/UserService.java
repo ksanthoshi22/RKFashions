@@ -50,7 +50,7 @@ public class UserService {
         Role role = roleRepository.findByName(userRole.name());
         if (role == null) {
             role = new Role();
-            role.setName("ROLE_USER");
+            role.setName(userRole.name());
             return roleRepository.save(role);
         }
         return role;
