@@ -18,7 +18,7 @@ public class CartController {
         GlobalData.cart.add(productService.getProductById(id).get());
         return "redirect:/shop";
     }
-
+// to add products to cart, and you can see the total amount
     @GetMapping("/cart")
     public String cartGet(Model model) {
         model.addAttribute("cartCount", GlobalData.cart.size());
