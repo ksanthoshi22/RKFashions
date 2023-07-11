@@ -28,7 +28,7 @@ public class ProductRepositoryTest {
         assertEquals(1, products.size());
         assertNotNull(products.get(0));
 
-        // Additional assertions...
+
     }
 }
 

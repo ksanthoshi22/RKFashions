@@ -15,7 +15,7 @@ import java.util.Optional;
 
 @Controller
 public class AdminController {
-
+//routing to all adminHome and category sections
     @Autowired
     CategoryService categoryService;
     @Autowired
@@ -37,7 +37,7 @@ public class AdminController {
         return "categoriesAdd";
 
     }
-
+//admin to add new category
     @PostMapping("/admin/categories/add")
     public String postCatAdd(@ModelAttribute("category") Category category, Model model) {
     if (categoryService.doesCategoryExist(category.getName())) {
@@ -48,6 +48,8 @@ public class AdminController {
      categoryService.addCategory(category);
     return "redirect:/admin/categories";
     }
+
+    //remove the category
     @GetMapping("/admin/categories/delete/{id}")
     public String deleteCategory(@PathVariable long id) {
         if (productRepository.findAllByCategory_Id(id).isEmpty()) {
