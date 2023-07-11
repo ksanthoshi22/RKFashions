@@ -17,7 +17,7 @@ import java.nio.file.Paths;
 
 @Controller
 public class ProductController {
-
+//this the directory for uploading the image
       public String uploadDir = "src/main/resources/static/productImages";
     @Autowired
     ProductService productService;
@@ -41,7 +41,7 @@ public class ProductController {
         return "productsAdd";
     }
 
-
+//    Adding product image name to database and storing  the image in under static/productImages
     @PostMapping("/admin/products/add")
     public String productAddPost(@ModelAttribute("productDto")ProductDTO productDTO,
                                  @RequestParam("productImage") MultipartFile file,
@@ -74,7 +74,7 @@ public class ProductController {
       productService.removeProductById(id);
             return "redirect:/admin/products";
         }
-
+//updating the product
     @GetMapping("/admin/product/update/{id}")
         public String updateProduct(@PathVariable long id,Model model){
         Product product = productService.getProductById(id).get();

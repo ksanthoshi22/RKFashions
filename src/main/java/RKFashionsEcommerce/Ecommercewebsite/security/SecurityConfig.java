@@ -23,8 +23,10 @@ public class SecurityConfig {
         http.csrf().disable()
                 .authorizeHttpRequests()
                 .antMatchers("/register/**").permitAll()
+                .antMatchers("/css/**","/js/**","/images/**","/productImages/**").permitAll()
                 .antMatchers("/index").permitAll()
-                .antMatchers("/admin").hasRole("ADMIN")
+                .antMatchers("/admin/** ").hasRole("ADMIN")
+                .antMatchers("/shop").hasAnyRole( "USER","ADMIN")
                 .and()
                 .formLogin(
                         form -> form
@@ -34,7 +36,8 @@ public class SecurityConfig {
                                 .permitAll()
                 ).logout(
                         logout -> logout
-                                .logoutRequestMatcher(new AntPathRequestMatcher("/index"))
+                                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                                .logoutSuccessUrl("/index")
                                 .permitAll());
         return http.build();
     }
