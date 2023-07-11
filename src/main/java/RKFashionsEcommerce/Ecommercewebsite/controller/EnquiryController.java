@@ -16,6 +16,7 @@ import java.util.List;
 public class EnquiryController {
     @Autowired
     EnquiryService enquiryService;
+    // Route to display the contact form for inquiries
     @GetMapping("/inquiries")
     public String getInquiry(Model model){
         Enquiry enquiry = new Enquiry();
@@ -29,6 +30,8 @@ public class EnquiryController {
         return "contact";
 
     }
+
+    // Route to display all inquiries (admin view)
     @GetMapping("/admin/inquiries")
     public String getInquiries(Model model) {
         try {

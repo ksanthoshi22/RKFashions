@@ -68,6 +68,9 @@ public class ProductController {
         productService.addProduct(product);
         return"redirect:/admin/products";
     }
+
+
+    // Handler for deleting a product
     @GetMapping("/admin/product/delete/{id}")
     public String deleteProduct(@PathVariable long id) {
 

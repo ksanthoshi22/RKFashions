@@ -15,21 +15,27 @@ import java.util.Optional;
 
 @Controller
 public class AdminController {
-//routing to all adminHome and category sections
+
+    // Autowire necessary dependencies
     @Autowired
     CategoryService categoryService;
     @Autowired
     ProductRepository productRepository;
+
+    // Route for admin home page
     @GetMapping("/admin")
     public String adminHome(){
         return "adminHome";
     }
+
+    // Route to display all categories
     @GetMapping("/admin/categories")
     public String getCat(Model model){
         Category category= new Category();
         model.addAttribute("categories",categoryService.getAllCategory());
         return "categories";
     }
+    // Route to display the form for adding a new category
     @GetMapping("/admin/categories/add")
     public String getCatAdd( Model model) {
 
@@ -37,7 +43,7 @@ public class AdminController {
         return "categoriesAdd";
 
     }
-//admin to add new category
+    // Handler for adding a new category
     @PostMapping("/admin/categories/add")
     public String postCatAdd(@ModelAttribute("category") Category category, Model model) {
     if (categoryService.doesCategoryExist(category.getName())) {
@@ -49,7 +55,7 @@ public class AdminController {
     return "redirect:/admin/categories";
     }
 
-    //remove the category
+    // Handler for deleting a category
     @GetMapping("/admin/categories/delete/{id}")
     public String deleteCategory(@PathVariable long id) {
         if (productRepository.findAllByCategory_Id(id).isEmpty()) {
