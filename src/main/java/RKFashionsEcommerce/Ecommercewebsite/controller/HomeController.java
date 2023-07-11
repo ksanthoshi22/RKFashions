@@ -27,7 +27,7 @@ public class HomeController {
 
         return "contact";
     }
-
+    // Check if the user is authenticated and determine if they are an admin
     @GetMapping({"/", "/home", "/index"})
     public String home(Model model){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -48,13 +48,14 @@ public class HomeController {
         model.addAttribute("products",productService.getAllProducts());
         return "shop";
     }
+    // Route to display the shop page with products filtered by category
     @GetMapping("/shop/category/{id}")
     public String shopByCategory(Model model, @PathVariable long id) {
         model.addAttribute("categories", categoryService.getAllCategory());
         model.addAttribute("products",productService.getAllProductsByCategoryId(id));
         return "shop";
     }
-
+    // Route to display the details of a specific product
     @GetMapping("/shop/viewProduct/{id}")
     public String viewProduct(Model model, @PathVariable long id) {
         model.addAttribute("product", productService.getProductById(id).get());
