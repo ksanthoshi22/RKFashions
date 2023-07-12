@@ -23235,3 +23235,175 @@ java.nio.file.NoSuchFileException: src\main\resources\static\productImages\4dde5
 2023-07-11 17:09:00.803 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-07-11 17:09:00.807 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2023-07-11 17:09:00.826 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-11 22:44:30.771 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-11 22:44:30.839 INFO  R.E.EcommercewebsiteApplication - Starting EcommercewebsiteApplication using Java 17.0.7 on LAPTOP-9MPLLM2T with PID 10000 (C:\Users\tsant\IdeaProjects\SpringJava\Ecommercewebsite\target\classes started by tsant in C:\Users\tsant\IdeaProjects\SpringJava\Ecommercewebsite)
+2023-07-11 22:44:30.840 INFO  R.E.EcommercewebsiteApplication - No active profile set, falling back to 1 default profile: "default"
+2023-07-11 22:44:30.972 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-11 22:44:30.973 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-11 22:44:32.495 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-11 22:44:32.497 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-07-11 22:44:32.554 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-11 22:44:32.559 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.EnquiryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-11 22:44:32.564 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-11 22:44:32.567 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-11 22:44:32.573 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-11 22:44:32.575 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 0 JDBC repository interfaces.
+2023-07-11 22:44:32.603 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-11 22:44:32.604 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-11 22:44:32.694 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 5 JPA repository interfaces.
+2023-07-11 22:44:34.114 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-11 22:44:34.133 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-11 22:44:34.134 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-11 22:44:34.134 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-11 22:44:34.346 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-11 22:44:34.348 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3370 ms
+2023-07-11 22:44:34.668 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-11 22:44:34.774 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-11 22:44:35.100 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-11 22:44:35.258 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-11 22:44:35.877 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-11 22:44:35.916 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-07-11 22:44:37.359 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-11 22:44:37.369 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-11 22:44:38.121 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f8888e4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14a295e6, org.springframework.security.web.context.SecurityContextPersistenceFilter@44aa08e6, org.springframework.security.web.header.HeaderWriterFilter@3e6367dc, org.springframework.security.web.authentication.logout.LogoutFilter@69d118f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@469f9e24, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28956f61, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40d62bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e7657e8, org.springframework.security.web.session.SessionManagementFilter@3a143374, org.springframework.security.web.access.ExceptionTranslationFilter@2c618f35, org.springframework.security.web.access.intercept.AuthorizationFilter@555bdf4c]
+2023-07-11 22:44:38.180 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-11 22:44:38.376 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-07-11 22:44:38.798 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-11 22:44:38.813 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-11 22:44:38.845 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-11 22:44:38.863 INFO  R.E.EcommercewebsiteApplication - Started EcommercewebsiteApplication in 8.894 seconds (JVM running for 10.014)
+2023-07-11 22:44:46.865 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-11 22:44:46.865 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-11 22:44:46.867 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-07-11 22:54:46.854 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-11 22:54:46.866 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-11 22:54:46.892 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-11 22:54:51.877 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-11 22:54:51.991 INFO  R.E.EcommercewebsiteApplication - Starting EcommercewebsiteApplication using Java 17.0.7 on LAPTOP-9MPLLM2T with PID 9800 (C:\Users\tsant\IdeaProjects\SpringJava\Ecommercewebsite\target\classes started by tsant in C:\Users\tsant\IdeaProjects\SpringJava\Ecommercewebsite)
+2023-07-11 22:54:51.995 INFO  R.E.EcommercewebsiteApplication - No active profile set, falling back to 1 default profile: "default"
+2023-07-11 22:54:52.121 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-11 22:54:52.121 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-11 22:54:53.705 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-11 22:54:53.708 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-07-11 22:54:53.766 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-11 22:54:53.788 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.EnquiryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-11 22:54:53.791 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-11 22:54:53.798 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-11 22:54:53.805 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-11 22:54:53.807 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 0 JDBC repository interfaces.
+2023-07-11 22:54:53.823 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-11 22:54:53.826 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-11 22:54:53.910 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 5 JPA repository interfaces.
+2023-07-11 22:54:55.519 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-11 22:54:55.550 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-11 22:54:55.551 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-11 22:54:55.551 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-11 22:54:55.712 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-11 22:54:55.713 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3589 ms
+2023-07-11 22:54:56.148 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-11 22:54:56.265 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-11 22:54:56.582 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-11 22:54:56.760 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-11 22:54:57.335 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-11 22:54:57.370 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-07-11 22:54:58.678 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-11 22:54:58.688 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-11 22:54:59.881 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53521d21, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d1560db, org.springframework.security.web.context.SecurityContextPersistenceFilter@14beab70, org.springframework.security.web.header.HeaderWriterFilter@5d944065, org.springframework.security.web.authentication.logout.LogoutFilter@2998f99e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d45e0bc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7813623d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@517f0574, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ff739c5, org.springframework.security.web.session.SessionManagementFilter@476d182f, org.springframework.security.web.access.ExceptionTranslationFilter@39732cca, org.springframework.security.web.access.intercept.AuthorizationFilter@5c285e3e]
+2023-07-11 22:55:00.008 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-11 22:55:00.350 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-07-11 22:55:00.914 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-11 22:55:00.937 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-11 22:55:00.975 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-11 22:55:00.995 INFO  R.E.EcommercewebsiteApplication - Started EcommercewebsiteApplication in 9.984 seconds (JVM running for 10.806)
+2023-07-11 22:55:33.760 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-11 22:55:33.761 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-11 22:55:33.764 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-07-11 22:55:46.613 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-11 22:55:46.624 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-11 22:55:46.652 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-12 06:39:55.932 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-12 06:39:55.981 INFO  R.E.EcommercewebsiteApplication - Starting EcommercewebsiteApplication using Java 17.0.7 on LAPTOP-9MPLLM2T with PID 6208 (C:\Users\tsant\IdeaProjects\SpringJava\Ecommercewebsite\target\classes started by tsant in C:\Users\tsant\IdeaProjects\SpringJava\Ecommercewebsite)
+2023-07-12 06:39:55.985 INFO  R.E.EcommercewebsiteApplication - No active profile set, falling back to 1 default profile: "default"
+2023-07-12 06:39:56.084 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 06:39:56.084 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 06:39:57.829 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-12 06:39:57.832 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-07-12 06:39:57.893 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-12 06:39:57.898 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.EnquiryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-12 06:39:57.904 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-12 06:39:57.912 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-12 06:39:57.921 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-12 06:39:57.923 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 0 JDBC repository interfaces.
+2023-07-12 06:39:57.961 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-12 06:39:57.963 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 06:39:58.080 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 5 JPA repository interfaces.
+2023-07-12 06:39:59.407 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-12 06:39:59.426 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-12 06:39:59.426 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-12 06:39:59.427 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-12 06:39:59.591 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-12 06:39:59.591 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3506 ms
+2023-07-12 06:40:00.142 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 06:40:00.282 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-12 06:40:00.669 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 06:40:01.059 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-12 06:40:01.612 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-12 06:40:01.633 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-07-12 06:40:03.537 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 06:40:03.553 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 06:40:04.841 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68870167, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@aa6b8, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ad2605c, org.springframework.security.web.header.HeaderWriterFilter@5800062c, org.springframework.security.web.authentication.logout.LogoutFilter@3bf7c90f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@32100fdc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@687b06fd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2481a02e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3256278a, org.springframework.security.web.session.SessionManagementFilter@2c209cf9, org.springframework.security.web.access.ExceptionTranslationFilter@20401bcf, org.springframework.security.web.access.intercept.AuthorizationFilter@29d5f10]
+2023-07-12 06:40:04.954 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 06:40:05.263 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-07-12 06:40:05.846 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-12 06:40:05.871 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-12 06:40:05.906 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-12 06:40:05.924 INFO  R.E.EcommercewebsiteApplication - Started EcommercewebsiteApplication in 10.756 seconds (JVM running for 11.663)
+2023-07-12 06:41:42.363 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-12 06:41:42.364 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-12 06:41:42.371 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-07-12 06:45:06.545 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 06:45:06.551 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-12 06:45:06.568 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-07-12 07:14:36.742 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2023-07-12 07:14:36.851 INFO  R.E.EcommercewebsiteApplication - Starting EcommercewebsiteApplication using Java 17.0.7 on LAPTOP-9MPLLM2T with PID 15876 (C:\Users\tsant\IdeaProjects\SpringJava\Ecommercewebsite\target\classes started by tsant in C:\Users\tsant\IdeaProjects\SpringJava\Ecommercewebsite)
+2023-07-12 07:14:36.854 INFO  R.E.EcommercewebsiteApplication - No active profile set, falling back to 1 default profile: "default"
+2023-07-12 07:14:37.065 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-12 07:14:37.065 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-12 07:14:38.778 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-12 07:14:38.780 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-07-12 07:14:38.840 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-12 07:14:38.843 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.EnquiryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-12 07:14:38.848 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-12 07:14:38.853 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-12 07:14:38.859 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface RKFashionsEcommerce.Ecommercewebsite.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-07-12 07:14:38.860 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 0 JDBC repository interfaces.
+2023-07-12 07:14:38.879 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-07-12 07:14:38.880 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-12 07:14:38.959 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+2023-07-12 07:14:40.888 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-07-12 07:14:40.916 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-07-12 07:14:40.917 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-07-12 07:14:40.918 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-07-12 07:14:41.171 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-07-12 07:14:41.171 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4100 ms
+2023-07-12 07:14:41.636 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-12 07:14:41.915 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-07-12 07:14:42.362 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-12 07:14:42.614 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-07-12 07:14:43.327 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-07-12 07:14:43.345 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-07-12 07:14:45.026 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-12 07:14:45.043 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 07:14:46.285 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44b46f33, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@125b4f71, org.springframework.security.web.context.SecurityContextPersistenceFilter@35a6c66, org.springframework.security.web.header.HeaderWriterFilter@4fc1959f, org.springframework.security.web.authentication.logout.LogoutFilter@69678ee9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4d1560db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@329e8b90, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50c9ef55, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@38585e1b, org.springframework.security.web.session.SessionManagementFilter@14beab70, org.springframework.security.web.access.ExceptionTranslationFilter@67d86d62, org.springframework.security.web.access.intercept.AuthorizationFilter@53521d21]
+2023-07-12 07:14:46.381 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-12 07:14:46.628 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-07-12 07:14:47.069 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-07-12 07:14:47.097 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-07-12 07:14:47.135 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-12 07:14:47.186 INFO  R.E.EcommercewebsiteApplication - Started EcommercewebsiteApplication in 11.229 seconds (JVM running for 12.189)
+2023-07-12 07:15:00.997 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-12 07:15:00.997 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-07-12 07:15:01.002 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-07-12 08:08:41.428 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-12 08:08:41.499 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-07-12 08:08:41.544 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
